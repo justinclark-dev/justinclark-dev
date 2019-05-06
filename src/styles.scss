@@ -1,1 +1,211 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+blueish: #4a00fb;
+pinkish: #e600ff;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+1,e600ff+100 */
+    background: #4a00fb; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #4a00fb 1%, #e600ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #4a00fb 1%,#e600ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #4a00fb 1%,#e600ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* SASS/SCSS version of above
+    // Needs latest Compass, add '@import "compass"' to your scss
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#4a00fb+1,e600ff+100
+    background-color: #4a00fb; // Old browsers
+    @include filter-gradient(#4a00fb, #e600ff, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(linear-gradient(left bottom, #4a00fb 1%,#e600ff 100%));
+    */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.menu-toggle {
+    width:40px;
+    cursor: pointer;
+}
+.menu-toggle-bar {
+    border-top: solid 2px #fff;
+    padding: 3px;
+}
+
+/*.menu-toggle {
+    .menu-top {
+
+    }
+    .menu-bottom {
+
+    }
+}*/
+
+aside {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav {
+    background: #fff;
+}
+
+#slider {
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+}
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}
+.slide-out {
+    animation: slide-out 0.5s forwards;
+}
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255,255,255,.35);
+    color: #000;
+}
+
+main {
+    background: #fff;
+    padding: 1em 1.4em;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.call-to-action {
+    display: block;
+    color: #fff;
+    background: #0e7fff;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    aside {
+        background: #dce1f6;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    main {
+        padding: 4em;
+        background: #fff url('images/background.svg') no-repeat bottom right;
+        background-size: 165%;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+    }
+
+    figcaption {
+        text-align: center;
+        color: #000;
+    }
+
+    ul {
+        display: block !important;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: #fff;
+    }
+
+    #slider {
+        transform: none;
+    }
+
+    nav {
+        background: none;
+    }
+
+    .call-to-action {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}

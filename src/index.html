@@ -2,13 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JustinclarkDev</title>
-  <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Justin Clark's web development portfolio.">
+  <title>justinclark.dev</title>
+  <base href="/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+
+
+
+<aside>
+  <figure>
+      <div id="avatar"></div>
+      <figcaption>Justin Clark</figcaption>
+  </figure>
+  <div class="menu-toggle">
+      <div class="menu-toggle-bar"></div>
+      <div class="menu-toggle-bar"></div>
+      <div class="menu-toggle-bar"></div>
+  </div>
+  <nav>
+      <ul id="slider">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+</aside>
+
+<main>
+  <h1>I'm a developer</h1>
+  <p>I design things and bring them to reality in the browser.</p>
+  <a href="#" class="call-to-action">my portfolio</a>
+</main>
+
+<script>
+  //document
+  (function() {
+      var menu = document.querySelector('ul'),
+          menulink = document.getElementsByClassName('menu-toggle')[0];
+
+      //menu.
+      var $slider = document.getElementById('slider');
+
+      menulink.addEventListener('click', function(e) {
+
+          //menu.classList.toggle('active');
+          //menu.classList.toggle('slider');
+          var isOpen = $slider.classList.contains('slide-in');
+          $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+
+          e.preventDefault();
+      })
+  })();
+
+</script>
+
+
+<app-root></app-root>
+
+
 </body>
 </html>

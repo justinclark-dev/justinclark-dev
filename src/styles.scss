@@ -1,58 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-/*
-blueish: #4a00fb;
-pinkish: #e600ff;
-*/
+/* global styles */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Consolas:400,700');
 
 body, html {
-    height: calc(100% - 2em);
+    height: 100%;
     margin: 0;
     font-family: 'Montserrat';
+    background: #333;
 }
 
-body {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+1,e600ff+100 */
-    background: #4a00fb; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #4a00fb 1%, #e600ff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #4a00fb 1%,#e600ff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #4a00fb 1%,#e600ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    /* SASS/SCSS version of above
-    // Needs latest Compass, add '@import "compass"' to your scss
-    // Permalink - use to edit and share this gradient:
-    // http://colorzilla.com/gradient-editor/#4a00fb+1,e600ff+100
-    background-color: #4a00fb; // Old browsers
-    @include filter-gradient(#4a00fb, #e600ff, horizontal); // IE6-9 fallback on horizontal gradient
-    @include background-image(linear-gradient(left bottom, #4a00fb 1%,#e600ff 100%));
-    */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 .menu-toggle {
     width:40px;
     cursor: pointer;
 }
 .menu-toggle-bar {
-    border-top: solid 2px #fff;
+    border-top: solid 2px #00ff00;
     padding: 3px;
 }
 
-/*.menu-toggle {
-    .menu-top {
-
-    }
-    .menu-bottom {
-
-    }
-}*/
-
 aside {
-    color: #fff;
+    color: #00ff00;
     display: grid;
     grid-template-columns: auto 40px;
     padding: 2em;
+    // height: 100%;
 }
 
 figure {
@@ -62,16 +34,17 @@ figure {
 figcaption {
     font-size: 1.3em;
     font-weight: bold;
+    font-family: Consolas;
 }
 
 nav {
-    background: #fff;
+    background: #222;
 }
 
 #slider {
     position: absolute;
     display: block;
-    background: #fff;
+    background: #222;
     width: 50%;
     left: 0;
     top: 0;
@@ -105,13 +78,13 @@ ul li a {
     font-size: .8em;
     display: block;
     padding: 1.5em 3em;
-    background-color: rgba(255,255,255,.35);
-    color: #000;
+    background-color: rgba(255,255,255,.05);
+    color: #00ff00;
 }
 
 main {
-    background: #fff;
     padding: 1em 1.4em;
+    color: #fff;
 }
 
 h1 {
@@ -126,7 +99,7 @@ p {
 .call-to-action {
     display: block;
     color: #fff;
-    background: #0e7fff;
+    background: green;
     text-decoration: none;
     padding: 8px 50px;
     font-size: 1.2em;
@@ -141,7 +114,6 @@ p {
     body {
         display: grid;
         grid-template-columns: 20% auto;
-        padding: 2em;
     }
 
     .menu-toggle {
@@ -149,7 +121,7 @@ p {
     }
 
     aside {
-        background: #dce1f6;
+        background: #222;
         grid-template-columns: auto;
         grid-template-rows: 20% auto;
         padding: 0;
@@ -157,13 +129,11 @@ p {
 
     main {
         padding: 4em;
-        background: #fff url('images/background.svg') no-repeat bottom right;
-        background-size: 165%;
     }
 
     #avatar {
         border-radius: 50%;
-        background: #fff;
+        background: #00ff00;
         width: 50px;
         height: 50px;
         margin: 2em auto 1em auto;
@@ -171,7 +141,7 @@ p {
 
     figcaption {
         text-align: center;
-        color: #000;
+        color: #00ff00;
     }
 
     ul {
@@ -183,7 +153,7 @@ p {
     }
 
     ul li a:hover {
-        background-color: #fff;
+        background-color: #444;
     }
 
     #slider {

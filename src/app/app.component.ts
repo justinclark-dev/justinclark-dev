@@ -19,9 +19,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-      const $menuToggler = document.getElementById('menu-toggler');
-      if (window.getComputedStyle($menuToggler).display !== 'none') {
-        alert('hidden');
-      }
+      // const $menuToggler = document.getElementById('menu-toggler');
+      // if (window.getComputedStyle($menuToggler).display !== 'none') {
+      //   alert('hidden');
+      // }
   }
 }

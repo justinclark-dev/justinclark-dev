@@ -7,62 +7,11 @@
   <title>justinclark.dev</title>
   <base href="/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
 
-
-
-<aside>
-  <figure>
-      <div id="avatar"></div>
-      <figcaption>justin clark</figcaption>
-  </figure>
-  <div class="menu-toggle">
-      <div class="menu-toggle-bar"></div>
-      <div class="menu-toggle-bar"></div>
-      <div class="menu-toggle-bar"></div>
-  </div>
-  <nav>
-      <ul id="slider">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-  </nav>
-</aside>
-
-<main>
-  <h1>full stack developer</h1>
-  <p>Yup... I can do it all.</p>
-  <a href="#" class="call-to-action">my portfolio</a>
-</main>
-
-<script>
-  //document
-  (function() {
-      var menu = document.querySelector('ul'),
-          menulink = document.getElementsByClassName('menu-toggle')[0];
-
-      //menu.
-      var $slider = document.getElementById('slider');
-
-      menulink.addEventListener('click', function(e) {
-
-          //menu.classList.toggle('active');
-          //menu.classList.toggle('slider');
-          var isOpen = $slider.classList.contains('slide-in');
-          $slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
-
-          e.preventDefault();
-      })
-  })();
-
-</script>
-
-
-<app-root></app-root>
-
+    <app-root></app-root>
 
 </body>
 </html>

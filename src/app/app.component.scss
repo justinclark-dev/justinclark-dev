@@ -1,0 +1,185 @@
+/* global styles */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Consolas:400,700');
+
+.menu-toggle {
+    width:40px;
+    cursor: pointer;
+}
+.menu-toggle-bar {
+    border-top: solid 2px #00ff00;
+    padding: 3px;
+}
+
+aside {
+    color: #00ff00;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+#avatar {
+  display: none;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Consolas;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+}
+
+nav {
+    background: #222;
+}
+
+#slider {
+    position: absolute;
+    display: block;
+    background: #222;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+}
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}
+.slide-out {
+    animation: slide-out 0.5s forwards;
+}
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgba(255,255,255,.05);
+    color: #00ff00;
+}
+
+main {
+    padding: 1em 1.4em;
+    color: #fff;
+}
+
+:host /deep/ h1 {
+    margin: 0;
+}
+
+:host /deep/ p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+:host /deep/ .call-to-action {
+    display: block;
+    color: #fff;
+    background: green;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    aside {
+        background: #222;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    main {
+        padding: 4em;
+    }
+
+    #avatar {
+        display: block;
+        border-radius: 50%;
+        background-color: #333;
+        width: 70px;
+        height: 70px;
+        margin: 2em auto 1em auto;
+
+        i {
+          display: block;
+          text-align: center;
+          padding: 10px 0;
+        }
+    }
+
+    figcaption {
+        font-size: 1.4em;
+        text-align: center;
+        color: #00ff00;
+    }
+
+    ul {
+        display: block !important;
+        margin-top: 3em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: #444;
+    }
+
+    #slider {
+        transform: none;
+    }
+
+    nav {
+        background: none;
+    }
+
+    :host /deep/ .call-to-action {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    :host /deep/ h1 {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    :host /deep/ p {
+        font-size: 1.3em;
+    }
+}

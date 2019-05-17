@@ -7,13 +7,13 @@
           <a [routerLink]="['/']">justin clark</a>
         </figcaption>
     </figure>
-    <div class="menu-toggle" id="menu-toggler" (click)="toggleSlider()">
+    <div class="menu-toggle" id="menu-toggler" (click)="toggle()">
         <div class="menu-toggle-bar"></div>
         <div class="menu-toggle-bar"></div>
         <div class="menu-toggle-bar"></div>
     </div>
     <nav>
-        <ul id="slider">
+        <ul id="slider" [@openClose]="sliderOpen ? 'open' : 'closed'">
             <li><a [routerLink]="['/']" (click)="closeSlider()">Home</a></li>
             <li><a [routerLink]="['/about']" (click)="closeSlider()">About</a></li>
             <li><a [routerLink]="['/portfolio']" (click)="closeSlider()">Portfolio</a></li>

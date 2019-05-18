@@ -4,7 +4,7 @@
           <i class="fas fa-user fa-3x"></i>
         </div>
         <figcaption>
-          <a [routerLink]="['/']">justin clark</a>
+          <a [routerLink]="['/']" routerLinkActive="active">justin clark</a>
         </figcaption>
     </figure>
     <div class="menu-toggle" id="menu-toggler" (click)="toggle()">
@@ -14,14 +14,15 @@
     </div>
     <nav>
         <ul id="slider" [@openClose]="sliderOpen ? 'open' : 'closed'">
-            <li><a [routerLink]="['/']" (click)="closeSlider()">Home</a></li>
-            <li><a [routerLink]="['/about']" (click)="closeSlider()">About</a></li>
-            <li><a [routerLink]="['/portfolio']" (click)="closeSlider()">Portfolio</a></li>
-            <li><a [routerLink]="['/contact']" (click)="closeSlider()">Contact</a></li>
+            <li><a [routerLink]="['/']" routerLinkActive="active" (click)="closeSlider()">Home</a></li>
+            <li><a [routerLink]="['/about']" routerLinkActive="active" (click)="closeSlider()">About</a></li>
+            <li><a [routerLink]="['/portfolio']" routerLinkActive="active" (click)="closeSlider()">Portfolio</a></li>
+            <li><a [routerLink]="['/contact']" routerLinkActive="active" (click)="closeSlider()">Contact</a></li>
         </ul>
     </nav>
 </aside>
 
-<main>
-    <router-outlet></router-outlet>
+<main [@routeAnimations]="o && o.activatedRouteData
+&& o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
 </main>

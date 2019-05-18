@@ -1,33 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition
-} from '@angular/animations';
+import { slideInMenu, slideInAnimation } from './route-animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('openClose', [
-      state('open', style({
-        opacity: 1,
-        transform: 'translateX(0%)'
-      })),
-      state('closed', style({
-        opacity: 0.5,
-        transform: 'translateX(-100%)'
-      })),
-      transition('open => closed', [
-        animate('0.5s')
-      ]),
-      transition('closed => open', [
-        animate('0.5s')
-      ]),
-    ]),
+    slideInMenu,
+    slideInAnimation
   ],
 })
 export class AppComponent implements OnInit {
@@ -47,7 +27,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     const $menuToggler = document.getElementById('menu-toggler');
-    if (!$menuToggler.offsetWidth && !$menuToggler.offsetHeight) {
+    const $menuTogglerSize = $menuToggler.getBoundingClientRect();
+    if (!$menuTogglerSize.width && !$menuTogglerSize.height) {
       this.mobileMode = false;
     } else {
       this.mobileMode = true;

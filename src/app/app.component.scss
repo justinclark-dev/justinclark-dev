@@ -12,7 +12,6 @@
   }
 }
 
-
 aside {
     color: #00ff00;
     display: grid;
@@ -118,16 +117,11 @@ main {
     #avatar {
         display: block;
         border-radius: 50%;
-        background-color: #333;
+        background: url('../images/Justin-ProfileThumb.jpg');
+        background-size: 100%;
         width: 70px;
         height: 70px;
         margin: 2em auto 1em auto;
-
-        i {
-          display: block;
-          text-align: center;
-          padding: 10px 0;
-        }
     }
 
     figcaption {

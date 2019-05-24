@@ -1,8 +1,6 @@
 <aside>
     <figure>
-        <div id="avatar">
-          <i class="fas fa-user fa-3x"></i>
-        </div>
+        <div id="avatar"></div>
         <figcaption>
           <a [routerLink]="['/']" routerLinkActive="active">justin clark</a>
         </figcaption>
@@ -22,7 +20,6 @@
     </nav>
 </aside>
 
-<main [@routeAnimations]="o && o.activatedRouteData
-&& o.activatedRouteData['animation']">
+<main [@routeAnimations]="o && o.activatedRouteData && o.activatedRouteData['animation']">
     <router-outlet #o="outlet"></router-outlet>
 </main>

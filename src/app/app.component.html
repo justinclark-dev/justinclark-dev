@@ -2,7 +2,8 @@
     <figure>
         <div id="avatar"></div>
         <figcaption>
-          <a [routerLink]="['/']" routerLinkActive="active">justin clark</a>
+          <a [routerLink]="['/']" >justin clark</a>
+          <p>full stack developer &#123;	&#125;</p>
         </figcaption>
     </figure>
     <div class="menu-toggle" id="menu-toggler" (click)="toggle()">
@@ -12,14 +13,13 @@
     </div>
     <nav>
         <ul id="slider" [@openClose]="sliderOpen ? 'open' : 'closed'">
-            <li><a [routerLink]="['/']" routerLinkActive="active" (click)="closeSlider()">Home</a></li>
-            <li><a [routerLink]="['/about']" routerLinkActive="active" (click)="closeSlider()">About</a></li>
-            <li><a [routerLink]="['/portfolio']" routerLinkActive="active" (click)="closeSlider()">Portfolio</a></li>
-            <li><a [routerLink]="['/contact']" routerLinkActive="active" (click)="closeSlider()">Contact</a></li>
+            <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeSlider()">~/home</a></li>
+            <li><a [routerLink]="['/about']" routerLinkActive="active" (click)="closeSlider()">~/about</a></li>
+            <li><a [routerLink]="['/portfolio']" routerLinkActive="active" (click)="closeSlider()">~/portfolio</a></li>
+            <li><a [routerLink]="['/contact']" routerLinkActive="active" (click)="closeSlider()">~/contact</a></li>
         </ul>
     </nav>
 </aside>
-
 <main [@routeAnimations]="o && o.activatedRouteData && o.activatedRouteData['animation']">
     <router-outlet #o="outlet"></router-outlet>
 </main>

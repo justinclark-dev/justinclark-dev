@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Consolas:400,700');
 
+$code-fonts: Consolas, Courier, monospace;
+
 .menu-toggle {
     width:40px;
     cursor: pointer;
@@ -30,8 +32,7 @@ figcaption {
   font-size: 1.4em;
   line-height: .8em;
   font-weight: bold;
-  font-family: Consolas;
-
+  font-family: $code-fonts;
     a {
       text-decoration: none;
       color: inherit;
@@ -43,7 +44,7 @@ figcaption {
 }
 
 nav {
-    font-family: Consolas;
+    font-family: $code-fonts;
     background: #222;
 }
 
@@ -75,7 +76,7 @@ ul li a {
 }
 
 main {
-    padding: 2em 1.4em;
+    padding: 0 1.4em;
     color: #eee;
 }
 

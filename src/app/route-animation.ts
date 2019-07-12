@@ -16,6 +16,9 @@ const animationState: any = {
     })),
     state('closed', style({
       opacity: 0.5,
+     /* msTransform: 'translateX(-100%)', /* IE 9 */
+     /* webkitTransform: 'translateX(-100%)', /* Safari 3-8 */
+
       transform: 'translateX(-100%)'
     })),
     transition('open => closed', [

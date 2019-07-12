@@ -216,9 +216,41 @@ main {
         background-color: #555;
     }
 
-    #slider {
-        transform: translateX(0%);
+    /** TODO: re-incorporate mixin fixes lexically **/
+    /* begin edge mixin */
+    @mixin edge{
+      @at-root {
+        @supports (-ms-ime-align: auto) {
+          & {
+            @content;
+          }
+        }
+      }
     }
+    main {
+        @include edge {
+          left:20%;
+        }
+    }
+    /* end edge mixin */
+    /* begin firefox mixin */
+    @mixin firefox {
+      @at-root {
+        @media screen and (min--moz-device-pixel-ratio:0)  {
+          & {
+            @content;
+          }
+        }
+      }
+    }
+    #slider {
+      transform: translateX(0%);
+
+        @include firefox {
+          transform: translateX(0%) !important;
+        }
+    }
+    /* end firefox mixin */
 
     nav {
         background: none;
@@ -240,7 +272,6 @@ main {
 
   aside {
       width: 22%;
-
   }
 
   main {

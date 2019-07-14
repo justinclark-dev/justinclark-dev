@@ -34,12 +34,11 @@
 .call-to-action {
   position: relative;
   top: 2em;
-	-webkit-animation: blurFadeIn .25s ease-in 5s backwards;
-	-moz-animation: blurFadeIn .25s ease-in 5s backwards;
-	-ms-animation: blurFadeIn .25s ease-in 5s backwards;
+	-webkit-animation: blurFadeIn .5s ease-in 5.5s backwards;
+	-moz-animation: blurFadeIn .5s ease-in 5.5s backwards;
+	-ms-animation: blurFadeIn .5s ease-in 5.5s backwards;
 	animation: blurFadeIn .5s ease-in 5.5s backwards;
 }
-
 @-webkit-keyframes blurFadeIn {
 	0% {
 		opacity: 0;
@@ -80,6 +79,17 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .terminal-font{
+    font-size: 140%;
+    position: relative;
+    z-index: 0 !important;
+  }
+
+  .call-to-action {
+    position: relative;
+    z-index: 0 !important;
+  }
 
   @keyframes typewriter{
     from{width: 0;}

@@ -12,13 +12,11 @@ const animationState: any = {
   sliderState: [
     state('open', style({
       opacity: 1,
-      transform: 'translateX(0%)'
+      transform: 'translateX(0%)',
+      zIndex: 1000
     })),
     state('closed', style({
       opacity: 0.5,
-     /* msTransform: 'translateX(-100%)', /* IE 9 */
-     /* webkitTransform: 'translateX(-100%)', /* Safari 3-8 */
-
       transform: 'translateX(-100%)'
     })),
     transition('open => closed', [

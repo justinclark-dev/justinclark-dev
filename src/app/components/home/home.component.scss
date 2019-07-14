@@ -1,0 +1,89 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Consolas:400,700');
+
+.terminal-font{
+  position: relative;
+  top: 2em;
+  width: 100px;
+  margin: 0;
+  border-right: 2px solid lime;
+  font-family: Consolas, Courier, monospace;
+  color: #00ff00;
+  font-size: 150%;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Typing Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(26) 1s 1 both,
+             blinkTextCursor 1000ms steps(26) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 14.2em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: green}
+  to{border-right-color: transparent;}
+}
+
+/* Button Animation */
+.call-to-action {
+  position: relative;
+  top: 2em;
+	-webkit-animation: blurFadeIn .25s ease-in 5s backwards;
+	-moz-animation: blurFadeIn .25s ease-in 5s backwards;
+	-ms-animation: blurFadeIn .25s ease-in 5s backwards;
+	animation: blurFadeIn .5s ease-in 5.5s backwards;
+}
+
+@-webkit-keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.5);
+	}
+	50% {
+		opacity: 0.5;
+		-webkit-transform: scale(.7);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+@-moz-keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		-moz-transform: scale(.5);
+	}
+	100% {
+		opacity: 1;
+		-moz-transform: scale(1);
+	}
+}
+@keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		opacity: 0.5;
+		transform: scale(.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 14.2em;}
+  }
+
+}

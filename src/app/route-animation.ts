@@ -17,7 +17,8 @@ const animationState: any = {
     })),
     state('closed', style({
       opacity: 0.5,
-      transform: 'translateX(-100%)'
+      transform: 'translateX(-100%)',
+      zIndex: 1000
     })),
     transition('open => closed', [
       animate('0.15s')

@@ -120,7 +120,7 @@ main {
 
 :host /deep/ img.top-image {
     width: 100%;
-    max-width: 640px;
+    /*max-width: 640px;*/
     margin-bottom: 20px;
 }
 
@@ -179,7 +179,7 @@ main {
     #avatar {
         display: block;
         border-radius: 50%;
-        background: url('../assets/images/Justin-ProfileThumb.jpg');
+        background: #333 url('../assets/images/user-icon.png');
         background-size: 100%;
         width: 160px;
         height: 160px;

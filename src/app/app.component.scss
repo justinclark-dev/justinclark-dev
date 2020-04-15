@@ -1,5 +1,7 @@
 $code-fonts: Consolas, Courier, monospace;
 
+$aside-dark: rgb(22, 22, 22);
+
 .menu-toggle {
     width:40px;
     cursor: pointer;
@@ -15,7 +17,7 @@ aside {
     display: grid;
     grid-template-columns: auto 40px;
     padding: 1.5em;
-    background-color: rgba(255,255,255,.05);
+    background-color: $aside-dark;
 }
 
 #avatar {
@@ -43,13 +45,13 @@ figcaption {
 
 nav {
     font-family: $code-fonts;
-    background: #222;
+    background: rgb(19, 17, 17);
 }
 
 #slider {
     position: fixed;
     display: block;
-    background: #111;
+    background: $aside-dark;
     width: 50%;
     left: 0;
     top: 0;
@@ -69,7 +71,7 @@ ul li a {
     font-size: 1em;
     display: block;
     padding: 1.5em 2em;
-    background-color: rgba(255,255,255,.05);
+    background-color: rgba(27, 30, 32, 0.75);
     color: #00ff00;
 }
 
@@ -84,12 +86,11 @@ main {
 :host /deep/ h4,
 :host /deep/ h5,
 :host /deep/ h6 {
-  text-transform: lowercase;
+  color: rgb(0, 138, 206);
   margin-bottom: 20px;
 }
 
 :host /deep/ h1 {
-  color: rgb(0, 138, 206);
   font-size: 2.8em;
 }
 
@@ -120,7 +121,7 @@ main {
 
 :host /deep/ img.top-image {
     width: 100%;
-    /*max-width: 640px;*/
+    max-width: 667px;
     margin-bottom: 20px;
 }
 
@@ -147,7 +148,7 @@ main {
     font-size: 1.2em;
     text-align: center;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 10px;
     margin: 2em 0;
 }
 
@@ -159,7 +160,6 @@ main {
 
     aside {
         z-index: 1000;
-        background: #111;
         width: 20%;
         grid-template-columns: auto;
         grid-template-rows: 20% auto;
@@ -179,7 +179,7 @@ main {
     #avatar {
         display: block;
         border-radius: 50%;
-        background: #333 url('../assets/images/user-icon.png');
+        background: rgb(27, 30, 32) url('../assets/images/user-icon.png');
         background-size: 100%;
         width: 160px;
         height: 160px;
@@ -212,11 +212,11 @@ main {
     }
 
     ul li a.active {
-        background: #444;
+        background: rgb(67, 69, 71);
     }
 
     ul li a:hover {
-        background-color: #555;
+        background: rgb(51, 52, 53);
     }
 
     /** TODO: re-incorporate mixin fixes lexically **/

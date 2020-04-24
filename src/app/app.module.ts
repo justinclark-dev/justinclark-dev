@@ -8,6 +8,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { HomeComponent } from './components/home/home.component';
+import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesomepizza/wickedawesomepizza.component';
+import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
+import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
+import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { HomeComponent } from './components/home/home.component';
     AboutComponent,
     ContactComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    WickedawesomepizzaComponent,
+    ExoticimportsComponent,
+    PortfoliowebsiteComponent,
+    CampaigndashboardComponent
   ],
   imports: [
     BrowserModule,

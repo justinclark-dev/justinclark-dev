@@ -4,12 +4,20 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesomepizza/wickedawesomepizza.component';
+import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
+import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
+import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'Home'} },
   { path: 'about', component: AboutComponent, data: {animation: 'About'} },
   { path: 'contact', component: ContactComponent, data: {animation: 'Contact'} },
-  { path: 'portfolio', component: PortfolioComponent, data: {animation: 'Portfolio'} }
+  { path: 'portfolio', component: PortfolioComponent, data: {animation: 'Portfolio'} },
+  { path: 'portfolio/wickedawesomepizza', component: WickedawesomepizzaComponent, data: {animation: 'Wickedawesomepizza'} },
+  { path: 'portfolio/exoticimports', component: ExoticimportsComponent, data: {animation: 'Exoticimports'} },
+  { path: 'portfolio/portfoliowebsite', component: PortfoliowebsiteComponent, data: {animation: 'Portfoliowebsite'} },
+  { path: 'portfolio/campaigndashboard', component: CampaigndashboardComponent, data: {animation: 'Campaigndashboard'} }
 ];
 
 @NgModule({

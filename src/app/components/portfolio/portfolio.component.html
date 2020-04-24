@@ -1,9 +1,93 @@
-<h1>Portfolio</h1>
+<h1>web developer portfolio</h1>
+
 <p>
-  My previous projects from my previous employer were proprietary and unfortunately I cannot show that work.
-
-  For now, this web site <em>is</em> my portfolio and is also a work in progress.
-
-  I am building this site with Angular which I am teaching myself as I go.
+  I worked over ten years at The Walt Disney Company starting out as a reporting analyst, and over half of that time as an "unofficial" full stack developer where I designed, developed, and maintained an internal dashboard web application that was used for advertising reporting and billing.
 </p>
-<p>View my <a href="assets/JustinClark_WebDeveloper.pdf" target="_blank">Resume</a>.</p>
+
+<p>
+  Now that I'm focusing on my education, my web development portfolio is still very new and will be constantly updated moving forward.
+</p>
+
+<div class="portfolio-wrapper">
+
+  <div class="perspective-container">
+    <div class="parallax-container">
+      <div class="front side wicked-awesome-pizza">
+        <div class="content"></div>
+      </div>
+      <div class="back side">
+        <div class="content">
+          <div class="inner-content">
+
+          <h2>Wicked Awesome Pizza</h2>
+
+          <a [routerLink]="['/portfolio/wickedawesomepizza']" routerLinkActive="router-link-active"  class="call-to-action">
+            <span>view details</span>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="perspective-container">
+    <div class="parallax-container">
+      <div class="front side exotic-imports">
+        <div class="content"></div>
+      </div>
+      <div class="back side">
+        <div class="content">
+
+          <h2>Exotic Imports</h2>
+
+          <a [routerLink]="['/portfolio/exoticimports']" routerLinkActive="router-link-active"  class="call-to-action">
+            <span>view details</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="perspective-container">
+    <div class="parallax-container">
+      <div class="front side portfolio-website">
+        <div class="content"></div>
+      </div>
+      <div class="back side">
+        <div class="content">
+
+          <h2>Portfolio Website</h2>
+
+          <a [routerLink]="['/portfolio/portfoliowebsite']" routerLinkActive="router-link-active"  class="call-to-action">
+            <span>view details</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="perspective-container">
+    <div class="parallax-container">
+      <div class="front side campaign-dashboard">
+        <div class="content"></div>
+      </div>
+      <div class="back side">
+        <div class="content">
+          <div class="inner-content">
+
+          <h2>Campaign Dashboard</h2>
+
+          <a [routerLink]="['/portfolio/campaigndashboard']" routerLinkActive="router-link-active"  class="call-to-action">
+            <span>view details</span>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

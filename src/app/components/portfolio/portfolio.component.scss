@@ -1,3 +1,10 @@
+$bg-color: rgb(52, 54, 56);
+
+.portfoliowebsite {background: $bg-color url('../../../assets/images/portfoliowebsite-768x432.png');}
+.wickedawesomepizza {background: $bg-color url('../../../assets/images/wickedawesomepizza-768x432.png');}
+.exoticimports {background: $bg-color url('../../../assets/images/exoticimports-768x432.png');}
+.campaigndashboard {background: $bg-color url('../../../assets/images/campaigndashboard-768x432.png');}
+
 .parallax-wrapper {
     width: 100%;
     cursor: pointer;
@@ -60,8 +67,3 @@
     transform: rotateY(-180deg);
     transform-style: preserve-3d;
 }
-
-.portfoliowebsite {background: url('../../../assets/images/portfoliowebsite-768x432.png');}
-.wickedawesomepizza {background: url('../../../assets/images/wickedawesomepizza-768x432.png');}
-.exoticimports {background: url('../../../assets/images/exoticimports-768x432.png');}
-.campaigndashboard {background: url('../../../assets/images/campaigndashboard-768x432.png');}

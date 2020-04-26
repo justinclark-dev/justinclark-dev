@@ -1,9 +1,7 @@
 $code-fonts: Consolas, Courier, monospace;
-
 $main-font-color: rgba(220, 220, 220, 0.6);
 $aside-dark: rgb(22, 22, 22);
 $blue: rgb(0, 138, 206);
-
 $shine: white;
 
 .menu-toggle {
@@ -11,13 +9,13 @@ $shine: white;
     cursor: pointer;
 
     .menu-toggle-bar {
-      border-top: solid 2px #00ff00;
+      border-top: solid 2px $blue;
       padding: 3px;
   }
 }
 
 aside {
-    color: #00ff00;
+    color: $blue;
     display: grid;
     grid-template-columns: auto 40px;
     padding: 1.5em;
@@ -48,7 +46,6 @@ figcaption {
 }
 
 nav {
-    // font-family: $code-fonts;
     background: rgb(19, 17, 17);
 }
 
@@ -90,7 +87,6 @@ main {
 :host /deep/ h4,
 :host /deep/ h5,
 :host /deep/ h6 {
-  // color: rgba(238, 238, 238, 0.39);
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: .5em;
 }
@@ -136,23 +132,33 @@ main {
     line-height: 1.5em;
 }
 
+:host /deep/ .button {
+  display: block;
+  color: #fff;
+  background: #085e90;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+:host /deep/ .button-normal {
+  padding: 8px 40px;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 2em 0;
+}
+
 :host /deep/ .call-to-action {
-    display: block;
-    color: #fff;
-    background: #085e90;
-    text-decoration: none;
-    padding: 8px 50px;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 10px;
-    margin: 2em 0;
+  padding: 8px 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 2em 0;
 }
 
 :host /deep/ .portfolio-wrapper {
   height: 100%;
 
-  img {
+  .portfolio-image-container img {
     width: 100%;
     margin-bottom: 2em;
   }
@@ -349,13 +355,8 @@ main {
         background: none;
     }
 
-    :host /deep/ .call-to-action {
-        display: inline-block;
-        font-size: 1.3em;
-        padding: .8em 3em;
-    }
-
-    :host /deep/ a.call-to-action {
+    :host /deep/ a.button {
+      display: inline-block;
       position: relative;
       overflow: hidden;
       z-index: 1;
@@ -369,7 +370,17 @@ main {
       }
     }
 
-    :host /deep/ a.call-to-action:before {
+    .button-normal {
+      font-size: 1.2em;
+      padding: 8px 50px;
+    }
+
+    :host /deep/ a.call-to-action {
+      font-size: 1.2em;
+      padding: .8em 3em;
+    }
+
+    :host /deep/ a.button:before {
       content: '';
       position: absolute;
       width: 100%;
@@ -381,7 +392,7 @@ main {
       transition: clip-path .6s ease-in-out;
     }
 
-    :host /deep/ a.call-to-action:hover:before {
+    :host /deep/ a.button:hover:before {
       clip-path: circle(0%);
     }
 
@@ -389,18 +400,6 @@ main {
       line-height: 2em;
     }
 }
-
-// @media (min-width: 768px) and (max-width: 950px) {
-
-//   main {
-//     padding-left: 8em;
-//     margin-left: 2em;
-//   }
-
-//   aside {
-//     min-width: 200px;
-//   }
-// }
 
 @media (min-width: 768px) and (max-width: 1280px) {
 

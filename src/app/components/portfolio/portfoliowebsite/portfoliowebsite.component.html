@@ -1,23 +1,22 @@
-<h1>This Portfolio Website</h1>
-<p>I'm building this website with Angular and a lot of other new skills like CSS3 animations and Angular's own animations.</p>
+<h1>Portfolio Website</h1>
+<p>I'm building this portfolio website with Angular while I'm learning it, along with a lot of other new skills like CSS3 and Angular animations, SCSS, ES6, TypeScript, and Heroku.</p>
 
 <div class="portfolio-wrapper">
 
   <div class="portfolio-image-container">
-    <img src="../../../../assets/images/portfoliowebsite-768x432.png" alt="Screenshot of Wicked Awesome Pizza website.">
+    <img src="../../../../assets/images/portfoliowebsite-768x432.png" alt="Screenshot of the homepage of my portfolio website.">
   </div>
-    <div class="stage2">
-      <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="call-to-action bounce"><span>you're already here ;)</span></a>
-    </div>
 
-    <div class="stage">
-      <div class="box bounce"></div>
-  </div>
+  <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="button button-normal bounce">
+    <span>you're already here ;)</span>
+  </a>
 
   <h2>About this Project</h2>
   <hr>
 
-  <p>This project was started about a year ago. I have many years of experience as a developer but most of that time was spent on a single proprietary internal business app for a large corporation, so I'm learning a lot of new things that are really help with creating a modern web app.  It's a funny feeling to feel like such a NOOB when I've been developing for so long.  But that's the nature of this game... we must forever be NOOBs at something in this constantly evolving industry.</p>
+  <p>I have experience using MongoDB, Express.js, and Node.js, therefore this project is helping me learn Angular so that I can develop using the full MEAN stack. Angular with it's CLI tool, is a great for building a front-end, but the one thing that I don't like how it downloads the full framework into the node_modules folder. It would be nice Angular could auto-load just the parts you need.</p>
+
+  <p>This project is hosted in Heroku where I have set up a pipeline with automatic build deployments with git pushes via the terminal. Heroku is Awesome!</p>
 
   <h2>Tech Details</h2>
   <hr>

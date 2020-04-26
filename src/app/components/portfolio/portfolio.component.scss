@@ -1,96 +1,67 @@
-.side, .front {
-  background: rgb(67, 69, 71);
-  border: 1px solid rgb(67, 69, 71);
-  padding: 0;
+.parallax-wrapper {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2em;
 }
-
-.wicked-awesome-pizza {
-  background: url('../../../assets/images/wickedawesomepizza-768x432.png');
+.parallax-content {
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
-
-.exotic-imports {
-  background: url('../../../assets/images/exoticimports-768x432.png');
+.front, .back {
+    border: 1px solid rgb(67, 69, 71);
+    border-radius: 5px;
+    min-height: 300px;
+    height: auto;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
 }
-
-.portfolio-website {
-  background: url('../../../assets/images/portfoliowebsite-768x432.png');
-}
-
-.campaign-dashboard {
-  background: url('../../../assets/images/campaigndashboard-768x432.png');
-}
-
-.perspective-container {
-  height: 100%;
-  perspective: 1000px;
-}
-
-.parallax-container {
-  height: 100%;
-  width: 100%;
-  transition: 1s ease-in;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.side {
-  position: absolute;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
-.content {
-  transform: translateZ(200px) scale(.8);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.front {
-  width: 100%;
-  height: 90%;
-  opacity: 1;
-  z-index: 2;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
 .back {
-  transform: rotateY(180deg);
-  z-index: 0;
-  width: 100%;
-  height: 90%;
+    background: rgb(67, 69, 71);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .inner p {
+        font-size: 1.8em;
+        margin: 0;
+    }
+}
+.inner {
+    transform: translateY(-50%) translateZ(190px) scale(0.9);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    perspective: inherit;
+    z-index: 2;
 }
 
-.parallax-container:hover {
-  transform: rotateY(180deg);
+.parallax-content .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
-.perspective-container {
-  opacity: 0;
-  animation: fadeIn 1.5s forwards;
-  animation-delay: 1s;
+.parallax-content:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
 }
 
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(-3em);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+.parallax-content .front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
 }
 
-/* change images depending on media size*/
+.parallax-content:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
 
-// @media only screen and (min-width: 768px) {}
-
-// @media (min-width: 768px) and (max-width: 950px) {}
-
-// @media (min-width: 768px) and (max-width: 1280px) {}
+.portfoliowebsite {background: url('../../../assets/images/portfoliowebsite-768x432.png');}
+.wickedawesomepizza {background: url('../../../assets/images/wickedawesomepizza-768x432.png');}
+.exoticimports {background: url('../../../assets/images/exoticimports-768x432.png');}
+.campaigndashboard {background: url('../../../assets/images/campaigndashboard-768x432.png');}

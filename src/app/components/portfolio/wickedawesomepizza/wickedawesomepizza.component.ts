@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-wickedawesomepizza',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WickedawesomepizzaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Justin Clark | Wicked Awesome Pizza Project');
+  }
 
   ngOnInit() {
   }

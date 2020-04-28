@@ -12,6 +12,7 @@ import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesom
 import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
 import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
 import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
+import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/pyramidsofgiza.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CampaigndashboardComponent } from './components/portfolio/campaigndashb
     WickedawesomepizzaComponent,
     ExoticimportsComponent,
     PortfoliowebsiteComponent,
-    CampaigndashboardComponent
+    CampaigndashboardComponent,
+    PyramidsofgizaComponent
   ],
   imports: [
     BrowserModule,

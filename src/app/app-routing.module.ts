@@ -8,6 +8,7 @@ import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesom
 import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
 import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
 import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
+import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/pyramidsofgiza.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'Home'} },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'portfolio/wickedawesomepizza', component: WickedawesomepizzaComponent, data: {animation: 'Wickedawesomepizza'} },
   { path: 'portfolio/exoticimports', component: ExoticimportsComponent, data: {animation: 'Exoticimports'} },
   { path: 'portfolio/portfoliowebsite', component: PortfoliowebsiteComponent, data: {animation: 'Portfoliowebsite'} },
-  { path: 'portfolio/campaigndashboard', component: CampaigndashboardComponent, data: {animation: 'Campaigndashboard'} }
+  { path: 'portfolio/campaigndashboard', component: CampaigndashboardComponent, data: {animation: 'Campaigndashboard'} },
+  { path: 'portfolio/pyramidsofgiza', component: PyramidsofgizaComponent, data: {animation: 'Pyramidsofgiza'} }
 ];
 
 @NgModule({

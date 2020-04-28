@@ -1,8 +1,9 @@
 $bg-color: rgb(52, 54, 56);
 
-.portfoliowebsite {background: $bg-color url('../../../assets/images/portfoliowebsite-768x432.png');}
 .wickedawesomepizza {background: $bg-color url('../../../assets/images/wickedawesomepizza-768x432.png');}
 .exoticimports {background: $bg-color url('../../../assets/images/exoticimports-768x432.png');}
+.portfoliowebsite {background: $bg-color url('../../../assets/images/portfoliowebsite-768x432.png');}
+.pyramidsofgiza {background: $bg-color url('../../../assets/images/the-great-pyramids-of-giza.png');}
 .campaigndashboard {background: $bg-color url('../../../assets/images/campaigndashboard-768x432.png');}
 
 .parallax-wrapper {
@@ -17,8 +18,8 @@ $bg-color: rgb(52, 54, 56);
 .front, .back {
     border: 1px solid rgb(67, 69, 71);
     border-radius: 5px;
-    min-height: 300px;
-    height: auto;
+    min-height: 400px;
+    height: 100% !important;
     color: white;
     text-align: center;
     background-size: cover;

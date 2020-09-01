@@ -9,6 +9,7 @@ import { ExoticimportsComponent } from './components/portfolio/exoticimports/exo
 import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
 import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
 import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/pyramidsofgiza.component';
+import { TelawrenceComponent } from './components/portfolio/telawrence/telawrence.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'Home'} },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'portfolio/exoticimports', component: ExoticimportsComponent, data: {animation: 'Exoticimports'} },
   { path: 'portfolio/portfoliowebsite', component: PortfoliowebsiteComponent, data: {animation: 'Portfoliowebsite'} },
   { path: 'portfolio/campaigndashboard', component: CampaigndashboardComponent, data: {animation: 'Campaigndashboard'} },
-  { path: 'portfolio/pyramidsofgiza', component: PyramidsofgizaComponent, data: {animation: 'Pyramidsofgiza'} }
+  { path: 'portfolio/pyramidsofgiza', component: PyramidsofgizaComponent, data: {animation: 'Pyramidsofgiza'} },
+  { path: 'portfolio/telawrence', component: TelawrenceComponent, data: {animation: 'Telawrence'} }
 ];
 
 @NgModule({

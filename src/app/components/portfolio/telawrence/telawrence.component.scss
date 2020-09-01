@@ -1,0 +1,31 @@
+.portfolio-image-container {
+    img {
+      background: rgb(52, 54, 56);
+      border: 1px solid rgb(67, 69, 71);
+      border-radius: 5px;
+      z-index: 10;
+      position: relative;
+    }
+  }
+  
+  .button {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    opacity: 0;
+    animation: bounce-in 1s forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-5em);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0em);
+    }
+  }
+  

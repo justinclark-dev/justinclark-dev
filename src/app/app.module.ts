@@ -13,6 +13,7 @@ import { ExoticimportsComponent } from './components/portfolio/exoticimports/exo
 import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
 import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
 import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/pyramidsofgiza.component';
+import { TelawrenceComponent } from './components/portfolio/telawrence/telawrence.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/p
     ExoticimportsComponent,
     PortfoliowebsiteComponent,
     CampaigndashboardComponent,
-    PyramidsofgizaComponent
+    PyramidsofgizaComponent,
+    TelawrenceComponent
   ],
   imports: [
     BrowserModule,

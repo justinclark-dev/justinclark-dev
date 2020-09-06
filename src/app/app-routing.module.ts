@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesomepizza/wickedawesomepizza.component';
 import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'Home'} },
   { path: 'about', component: AboutComponent, data: {animation: 'About'} },
   { path: 'contact', component: ContactComponent, data: {animation: 'Contact'} },
+  { path: 'resume', component: ResumeComponent, data: {animation: 'Resume'} },
   { path: 'portfolio', component: PortfolioComponent, data: {animation: 'Portfolio'} },
   { path: 'portfolio/wickedawesomepizza', component: WickedawesomepizzaComponent, data: {animation: 'Wickedawesomepizza'} },
   { path: 'portfolio/exoticimports', component: ExoticimportsComponent, data: {animation: 'Exoticimports'} },

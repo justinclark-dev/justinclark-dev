@@ -10,7 +10,7 @@ iframe {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    iframe {
+    object {
         background: #fff;
     }
 }

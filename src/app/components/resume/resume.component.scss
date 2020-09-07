@@ -8,10 +8,18 @@ iframe {
     height: calc(100vh - 80px);
 }
 
+.resume-img {
+    display: none;
+}
+
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
     iframe {
-        background: #fff;
+        display: none;
+    }
+
+    .resume-img {
+        display: block;
     }
 }
 

@@ -8,12 +8,19 @@ iframe {
     height: calc(100vh - 80px);
 }
 
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    iframe {
+        background: #fff;
+    }
+}
+
 .resume {
     opacity: 0;
     animation: fade-in .9s forwards;
     animation-delay: .5s;
 }
-  
+
 @keyframes fade-in {
     0% {
         opacity: 0;

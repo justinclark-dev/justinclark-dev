@@ -1,25 +1,39 @@
-object {
+.resume-container {
+    z-index: 5;
+    box-shadow: 0 0 20px #000;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    height: calc(100vh + 80px);
 }
 
-iframe {
+.resume-container img {
     width: 100%;
-    height: calc(100vh - 80px);
+    transition: .3s;
 }
 
-.resume {
-    opacity: 0;
-    animation: fade-in .9s forwards;
-    animation-delay: .5s;
+.resume-container:hover img {
+    opacity: .5;
 }
-  
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;  
+.resume-container .resume-link {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -4em;
+    height: 4em;
+    background: #000;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    span {
+        line-height: 4em;
+        position: relative; 
     }
+}
+
+.resume-container:hover .resume-link {
+    top: 0;
 }

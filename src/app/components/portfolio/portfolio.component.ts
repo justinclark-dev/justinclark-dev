@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class PortfolioComponent implements OnInit {
 
   constructor(private titleService: Title) {
-    this.titleService.setTitle('Justin Clark | Web Developer Portfolio');
+    this.titleService.setTitle('Justin Clark | Developer Portfolio');
   }
 
   ngOnInit() {

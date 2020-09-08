@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { HomeComponent } from './components/home/home.component';
 import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesomepizza/wickedawesomepizza.component';
@@ -20,6 +21,7 @@ import { TelawrenceComponent } from './components/portfolio/telawrence/telawrenc
     AppComponent,
     AboutComponent,
     ContactComponent,
+    ResumeComponent,
     PortfolioComponent,
     HomeComponent,
     WickedawesomepizzaComponent,

@@ -20,6 +20,10 @@ aside {
     grid-template-columns: auto 40px;
     padding: 1.5em;
     background-color: $aside-dark;
+
+    a {
+      text-decoration: none;
+    }
 }
 
 #avatar {
@@ -36,7 +40,6 @@ figcaption {
   font-weight: bold;
   font-family: $code-fonts;
     a {
-      text-decoration: none;
       color: inherit;
     }
 

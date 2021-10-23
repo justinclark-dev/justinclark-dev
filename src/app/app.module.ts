@@ -15,6 +15,7 @@ import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsi
 import { CampaigndashboardComponent } from './components/portfolio/campaigndashboard/campaigndashboard.component';
 import { PyramidsofgizaComponent } from './components/portfolio/pyramidsofgiza/pyramidsofgiza.component';
 import { TelawrenceComponent } from './components/portfolio/telawrence/telawrence.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TelawrenceComponent } from './components/portfolio/telawrence/telawrenc
     PortfoliowebsiteComponent,
     CampaigndashboardComponent,
     PyramidsofgizaComponent,
-    TelawrenceComponent
+    TelawrenceComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

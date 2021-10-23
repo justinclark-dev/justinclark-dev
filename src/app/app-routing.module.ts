@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { BlogComponent } from './components/blog/blog.component';
 import { WickedawesomepizzaComponent } from './components/portfolio/wickedawesomepizza/wickedawesomepizza.component';
 import { ExoticimportsComponent } from './components/portfolio/exoticimports/exoticimports.component';
 import { PortfoliowebsiteComponent } from './components/portfolio/portfoliowebsite/portfoliowebsite.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, data: {animation: 'Contact'} },
   { path: 'resume', component: ResumeComponent, data: {animation: 'Resume'} },
   { path: 'portfolio', component: PortfolioComponent, data: {animation: 'Portfolio'} },
+  { path: 'blog', component: BlogComponent, data: {animation: 'Blog'} },
   { path: 'portfolio/wickedawesomepizza', component: WickedawesomepizzaComponent, data: {animation: 'Wickedawesomepizza'} },
   { path: 'portfolio/exoticimports', component: ExoticimportsComponent, data: {animation: 'Exoticimports'} },
   { path: 'portfolio/portfoliowebsite', component: PortfoliowebsiteComponent, data: {animation: 'Portfoliowebsite'} },

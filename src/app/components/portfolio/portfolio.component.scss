@@ -48,6 +48,7 @@ $bg-color: rgb(52, 54, 56);
     box-sizing: border-box;
     perspective: inherit;
     z-index: 2;
+    backface-visibility: hidden;
 }
 
 .parallax-content .back {
@@ -69,3 +70,6 @@ $bg-color: rgb(52, 54, 56);
     transform: rotateY(-180deg);
     transform-style: preserve-3d;
 }
+
+// same source code, but this one works:
+// https://pixelbrewco.com/index.php?step=blog&step2=parallax_flip_cards
